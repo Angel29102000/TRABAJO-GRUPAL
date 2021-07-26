@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estructura básica HTML5</title>
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+	
+<div id="contenedor">
+<header>
+<p> 
+<img src="imagenes/pp.jfif" width="150"height="150" align="left"><font face="Brush Script MT"style="color:#000;"><h1>FURYPS</h1></font>
+</p>
+
+</header>
+<nav>
+<ul>
+	<li><A HREF="index.html"style="color:#8033ed;"> PaginaPrincipal</A></li>
+    <li><A HREF="Inicio.html"style="color:#8033ed;"> PROMOCIONES </A></li>
+    <li><A HREF="Servicios.html"style="color:#8033ed;"> SERVICIOS </A></li>
+    <li> <A HREF="Contacto.html"style="color:#8033ed;">CONTACTO</A></li>
+    <li> <A HREF="Categorias.html"style="color:#8033ed;">COMBOS</A></li>
+    <li> <A HREF="Complementos.html"style="color:#8033ed;">COMPLEMENTOS</A></li>
+    <li> <A HREF="Postres.html"style="color:#8033ed;">POSTRE</A></li>
+   
+    <li> <A HREF="Exlusivos.html"style="color:#8033ed;">EXCLUSIVO</A></li>
+  </ul>
+</nav>
+
+<section id="contenido" >
+<article >
+
+<BR>
+<font style="color:#000;">
+<div style= "margin: 0px 0 0 0px">
+	
+<script language="JavaScript">
+function informar(){
+var men=" ";
+men+="Se ha seleccionado: \n Hamburguesa..: ";
+for (j=0; j<form1.Hamburguesa.length; j++){
+if (form1.Hamburguesa[j].checked){
+men+=document.form1.Hamburguesa[j].value
+}
+}
+men+="\n Papas..: ";
+for (j=0; j<form1.Papas.length; j++){
+if (form1.Papas[j].checked){
+men+=document.form1.Papas[j].value
+}
+}
+
+men+="\n Bebida..: ";
+for (j=0; j<form1.Bebida.length; j++){
+if (form1.Bebida[j].checked){
+men+=document.form1.Bebida[j].value
+}
+}
+
+men+="\n Cremas..: ";
+for (j=0; j<form1.Cremas.length; j++){
+if (form1.Cremas[j].checked){
+men+=document.form1.Cremas[j].value
+}
+}
+
+alert(men);
+
+}
+
+</script></head>
+
+<body>
+<form name="form1" action="javascript:informar()">
+Selecciona las opciones deseadas ... <br><br>
+<Table border=1>
+<tr align=center><td>Hamburguesa</td><td>Papas</td><td>Bebidas</td><td>Cremas</td></tr>
+<td> <input type=radio name="Hamburguesa" value="clasica (carne de res+queso+tomate+lechuga)" checked>clasica <br>(carne de res+queso+tomate+lechuga)<br>
+<input type=radio name="Hamburguesa" value="royal (carne de res+huevo+tosino+queso+tomate+lechuga)">royal <br>(carne de res+huevo+tosino+queso+tomate+lechuga)<br>
+<input type=radio name="Hamburguesa	" value="Vegana(cebolla+lechuga+tomate+soja+queso vejetal)">Vegana <br>(cebolla+lechuga+tomate+soja+queso vejetal)<br>
+</td>
+
+<td>
+<input type=radio name="Papas" value="Pequeña" checked>Normal<br>
+<input type=radio name="Papas" value="Mediana">Mediana<br>
+<input type=radio name="Papas" value="Grande">Grande<br>
+</td>
+<td>
+<input type=radio name="Bebida" value="Coca Cola 1L">Coca Cola 1L<br>
+<input type=radio name="Bebida" value="Pepsi 1L" checked>Pepsi 1L<br>
+<input type=radio name="Bebida" value="Inka kola 1L">Inka kola 1L<br>
+</td>
+
+
+<td>
+<input type=radio name="Cremas" value="Mayonesa +Mostasa+ketchup"checked>1<br> Mayonesa+Mostasa+ketchup<br>
+<input type=radio name="Cremas" value="Mayonesa+aji+tartara" >2 <br>Mayonesa+aji+tartara<br>
+<input type=radio name="Cremas" value="todos">3<br>Todos<br>
+</td>
+
+</tr>
+</table>
+<br>
+
+<input type=submit name="cmdEnviar" value="Enviar">
+<input type=reset name="cmdLimpiar" value="Limpiar">
+<div style= "margin: 10px 0 0 120px">
+<img src="imagenes/anc.gif" width="300"height="200" align="center">
+</div>
+</font>
+ </article>
+</section>
+<aside>
+<div style= "margin: 10px 0 0 10px">
+<u><h2>Te podria interesar</h2></u>
+<A HREF="https://www.pizzahut.com.pe/"><img src="imagenes/pizza.gif" width="150"height="150" align="center"></A >
+<h2>Tambien..</h2>
+<A HREF="https://kfc.com.pe/"><img src="imagenes/kfc.gif" width="150"height="150" align="center"></br></A >	
+</div>
+</aside>
+<footer>
+<center>
+<h3><FONT style="color:#000;"> ©2021 FURYSP  <br>Politica de privacidad y cookies</h3>
+</center>	
+</footer>
+</div>
+</body>
+</html>
